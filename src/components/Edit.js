@@ -1,7 +1,6 @@
 
 import React from "react"
-import  * as Mditor from "mditor/src/client/index"
-import "mditor/src/client/index.less"
+import mditor from "mditor/dist/js/mditor"
 export default class Edit extends React.Component{
 
   render(){
@@ -14,6 +13,6 @@ export default class Edit extends React.Component{
   }
 
   componentDidMount(){
-
+    var mditor1 =  mditor.fromTextarea(document.getElementById('editor'))
   }
 }
